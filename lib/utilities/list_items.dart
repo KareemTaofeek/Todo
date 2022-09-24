@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
 
@@ -45,7 +46,7 @@ class ListItems extends StatelessWidget {
               child: Container(
                 padding: EdgeInsets.all(12),
                 decoration: BoxDecoration(
-                  //color: Colors.blue,
+                  color: Colors.grey[200],
                   borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(10),
                     bottomLeft: Radius.circular(10),
@@ -70,7 +71,8 @@ class ListItems extends StatelessWidget {
                         Text(
                           TaskDescription,
                           style: TextStyle(
-                              //color: Colors.grey[200],
+                              fontSize: 16,
+                              color: Colors.grey[400],
                               decoration: BoxChecked ? TextDecoration.lineThrough : TextDecoration.none),),
                       ],
                     ),
@@ -78,7 +80,7 @@ class ListItems extends StatelessWidget {
                     //checkbox---------------------------------------------------
                     Checkbox(
                         checkColor: Colors.white,
-                        activeColor: Colors.blueAccent,
+                        activeColor: Colors.redAccent,
                         value: BoxChecked,
                         onChanged: onChanged
                     ),

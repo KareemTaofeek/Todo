@@ -80,15 +80,15 @@ class _HomePageState extends State<HomePage> {
 
       //Appbar-----------------------------------------------------------------
       appBar:AppBar(
-        backgroundColor: Colors.redAccent,
+        backgroundColor: Colors.blueGrey,
         title: Center(
-            child: Text('ON Time'),),
+            child: Text('ON TIME'),),
         elevation: 0,
       ),
 
       //Floating button--------------------------------------------------------
       floatingActionButton: FloatingActionButton (
-        backgroundColor: Colors.redAccent,
+        backgroundColor: Colors.blueGrey,
         onPressed: AddTask,
         child:Icon(
           Icons.add_circle,

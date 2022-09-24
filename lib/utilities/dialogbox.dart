@@ -22,9 +22,9 @@ class DialogBox extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AlertDialog(
-      backgroundColor: Colors.redAccent,
+      backgroundColor: Colors.blueGrey,
       content:  Container(
-        height: 280,
+        height: 290,
         child:
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -37,8 +37,7 @@ class DialogBox extends StatelessWidget {
               decoration: InputDecoration(
                 isDense: true,
                   border: OutlineInputBorder(),
-                labelText: 'What do you want to do?'
-                //hintText: 'What do you want to do?',
+                labelText: 'What do you want to do?',
               ),
             ),
 
@@ -47,11 +46,13 @@ class DialogBox extends StatelessWidget {
             Text('Description'),
             SizedBox(height: 6,),
             TextField(
+              maxLines: 2,
+              maxLength: 200,
               controller: Descriptioncontroller,
               decoration: InputDecoration(
                 border: OutlineInputBorder(),
                 labelText: 'Describe your task.',
-                contentPadding: EdgeInsets.only(bottom: 60,left: 12),
+                contentPadding: EdgeInsets.only(bottom: 60,left: 12,right: 12),
               ),
             ),
             SizedBox(height: 15,),
