@@ -34,27 +34,35 @@ class ListItems extends StatelessWidget {
                     onPressed: deleteFunction,
                     backgroundColor: Colors.redAccent,
                     icon: Icons.delete,
-                    borderRadius: BorderRadius.circular(8),
+                    foregroundColor: Colors.white,
+                    borderRadius: BorderRadius.only(
+                        topRight: Radius.circular(10),
+                        bottomRight: Radius.circular(10),
+                    ),
                   ),
                 ],
               ),
               child: Container(
                 padding: EdgeInsets.all(12),
                 decoration: BoxDecoration(
-                  color: Colors.blue,
-                  borderRadius: BorderRadius.circular(6),
+                  //color: Colors.blue,
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(10),
+                    bottomLeft: Radius.circular(10),
+                  ),
                 ),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Column( crossAxisAlignment: CrossAxisAlignment.start,
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
                           TaskName,
                           style: TextStyle(
-                              fontSize: 20,
+                              fontSize: 25,
                               fontWeight: FontWeight.bold,
-                              color: Colors.white,
+                              //color: Colors.white,
                               decoration: BoxChecked ? TextDecoration.lineThrough : TextDecoration.none
                           ),
                         ),
@@ -62,7 +70,7 @@ class ListItems extends StatelessWidget {
                         Text(
                           TaskDescription,
                           style: TextStyle(
-                              color: Colors.grey[200],
+                              //color: Colors.grey[200],
                               decoration: BoxChecked ? TextDecoration.lineThrough : TextDecoration.none),),
                       ],
                     ),

@@ -76,11 +76,13 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
 
       //Appbar-----------------------------------------------------------------
       appBar:AppBar(
         backgroundColor: Colors.redAccent,
-        title: Text('Todo List'),
+        title: Center(
+            child: Text('ON Time'),),
         elevation: 0,
       ),
 
